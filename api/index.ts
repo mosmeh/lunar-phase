@@ -24,5 +24,8 @@ export default function requestHandler(req: ServerRequest) {
             phase_name: phase.name,
             emoji: phase.emoji,
         }),
+        headers: new Headers({
+            'Content-Type': 'application/json; charset=utf-8',
+        }),
     });
 }
